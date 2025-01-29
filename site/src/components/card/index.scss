@@ -1,0 +1,100 @@
+
+.comp-card {
+
+
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        box-shadow: 1px 2px 10px #e3e3e3;
+        background-color: #fff;
+        padding: 25px;
+        width: 235px;
+        height: 270px;
+        border-radius: 26px;
+        margin: 30px 10px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .card > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card div {
+        margin: 4px;
+    }
+
+
+
+    .card .acoes {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        top: -50px;
+        padding: 20px;
+
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .card:hover {
+        transition: .1s;
+        transform: scale(1.04);
+
+        .acoes {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .card .acoes > img {
+        margin: 0px 5px;
+        cursor: pointer;
+    }
+
+
+    .card .sigla {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 61px;
+        height: 52px;
+        background-color: #FFCE37;
+        border-radius: 18px;
+
+        font: 600 22px 'Inter';
+        color:#fff;
+    }
+
+    .card .filme {
+        font: 800 16px 'Inter';
+        color: #606060;
+    }
+
+    .card .lancamento {
+        font: 500 12px 'Inter';
+        color: #AEAEAE;
+    }
+
+    .card .avaliacao {
+        font: 500 16px 'Inter';
+        color: #6c6c6c;
+        margin-bottom: 8px;
+    }
+
+    .card .disponivel {
+        font: 500 12px 'Inter';
+        color: #6c6c6c
+    }
+}
